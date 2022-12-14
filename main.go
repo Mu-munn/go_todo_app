@@ -28,7 +28,7 @@ func main() {
 }
 func run(ctx context.Context, l net.Listener) error {
 	s := &http.Server{
-		// Addrフィールドではなく、引数で取るnet.Listenerを使用したい
+		// Addrフィールドではなく、引数で取るnet.Listenerを使用したい。
 		// Addr: ":18080",
 
 		Handler: http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
